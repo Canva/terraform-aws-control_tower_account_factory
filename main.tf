@@ -117,6 +117,7 @@ module "aft_customizations" {
   maximum_concurrent_customizations                 = var.maximum_concurrent_customizations
   customizations_archive_path                       = module.packaging.customizations_archive_path
   customizations_archive_hash                       = module.packaging.customizations_archive_hash
+  aft_customizations_custom_image                   = var.aft_customizations_custom_image
 }
 
 module "aft_feature_options" {

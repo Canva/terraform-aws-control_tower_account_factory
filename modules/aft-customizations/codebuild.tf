@@ -19,7 +19,7 @@ resource "aws_codebuild_project" "aft_global_customizations_terraform" {
 
   environment {
     compute_type                = "BUILD_GENERAL1_MEDIUM"
-    image                       = "aws/codebuild/amazonlinux2-x86_64-standard:3.0"
+    image                       = var.aft_customizations_custom_image
     type                        = "LINUX_CONTAINER"
     image_pull_credentials_type = "CODEBUILD"
   }
